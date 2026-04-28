@@ -1,4 +1,7 @@
-# 🚀 InternHub — Simple Setup Guide
+#  InternHub — MP online internship project 
+
+
+Remote Internship Progress Dashboard is an internal tool designed for mentors to track student tasks and weekly reports. It includes features like markdown-based report submission, a task kanban board, and a mentor feedback section. The tech focus will be on React (react-kanban) for the frontend and Python for backend progress analytics.
 
 ## ✅ What you need (install these first)
 - **Python 3.11+** → https://python.org/downloads
@@ -80,7 +83,7 @@ internhub/
     └── package.json
 ```
 
-## ❓ Common Issues
+##  Common Issues
 
 **`python3` not found on Windows?**
 Use `python` instead of `python3`
