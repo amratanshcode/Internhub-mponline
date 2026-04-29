@@ -12,6 +12,7 @@ app.add_middleware(
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
 )
 
+
 app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(internships.router)
@@ -29,9 +30,8 @@ def seed_demo_data():
             return  # already seeded
 
         print("🌱 Seeding demo data...")
-      # Users
-        admin  = User(id="u1", name="Admin User",   email="admin@hub.io",  password_hash=hash_password("admin123"),  role="admin")
-        admin = User(id="u1", name="Admin User", email="admin@hub.io", password_hash="admin123", role="admin")
+        # Users
+        admin = User(id="u1", name="Admin User", email="admin@hub.io", password_hash=hash_password("admin123"), role="admin")
         sarah  = User(id="u2", name="Sarah Chen",   email="sarah@hub.io",  password_hash=hash_password("mentor123"), role="mentor")
         james  = User(id="u3", name="James Okafor", email="james@hub.io",  password_hash=hash_password("mentor123"), role="mentor")
         db.add_all([admin, sarah, james]); db.commit()
